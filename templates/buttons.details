@@ -1,0 +1,24 @@
+[youtube]
+class = YouTubebutton
+icon = YouTubeIcon.png
+front = YouTube
+
+[bandcamp]
+class = Bandcampbutton
+icon = BandcampIcon.png
+front = bandcamp
+
+[soundcloud]
+class = Soundcloudbutton
+icon = SoundCloudIcon.png
+front = SOUNDCLOUD
+
+[deviantart]
+class = Deviantartbutton
+icon = DeviantartIcon.png
+front = DeviantART
+
+[ponyfm]
+class = Ponyfmbutton
+icon = PonyfmIcon.png
+front = Pony.fm

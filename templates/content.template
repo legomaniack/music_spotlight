@@ -1,0 +1,28 @@
+<span>
+	<div>
+		<div class="titlebanner">
+			<h2 class="title">{title}</h2>
+			<div id="tagbox" class="tags title">
+				{tags}
+			</div>
+		</div>
+		<div class="container">
+			<div class="imgwrapper">
+				<img class="artwork" src="{artwork}">
+				<div class="slide">
+					<img class="avatar" src="{avatar}"></img>
+					<p class="slideinfo">{artist}</p>
+				</div>
+			</div>
+			<div class="content">
+				<iframe src="{iframe}"></iframe>
+				<div class="linkbuttons">
+					{buttons}
+				</div>
+			</div>
+			<div class="buffer"></div>
+		</div>
+		<br/>
+		<div class="paragraph"><p>{comment}</p></div>
+	</div>
+</span>

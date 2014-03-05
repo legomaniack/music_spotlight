@@ -1,0 +1,18 @@
+[tags]
+pony = <div class="pony">Pony</div>
+vocals = <div class="vocals">Vocals</div>
+orchestral = <div class="acoustic orchestral">Orchestral</div>
+orchestral epic = <div class="acoustic orchestral_epic">Orchestral Epic</div>
+piano = <div class="acoustic piano">Piano</div>
+rock = <div class="acoustic rock">Rock</div>
+house = <div class="electronic house">House</div>
+progressive house<div class="electronic progressive_house">Progressive House</div>
+chiptune = <div class="electronic chiptune">Chiptune</div>
+ambient = <div class="electronic ambient">Ambient</div>
+dubstep = <div class="electronic dubstep">Dubstep</div>
+twilight = <div class="twilight">Twilight Sparkle</div>
+applejack = <div class="applejack">Applejack</div>
+fluttershy = <div class="flutters">Fluttershy</div>
+dash = <div class="dash">Rainbow Dash</div>
+rarity = <div class="rarity">Rarity</div>
+pinkie = <div class="pinkie">Pinkie Pie</div>

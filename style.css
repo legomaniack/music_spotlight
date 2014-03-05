@@ -1,0 +1,566 @@
+hanoi.py
+html{
+	background-color: #D9F0FF;
+	overflow-x: hidden;
+}
+
+body {
+	min-width: 1000px;
+}
+
+
+
+div.header { /*Main title banner*/
+	width:100%;
+    height: 200px;
+	background-color:#2f69be;
+	border-radius: 0px;
+	padding-right: 20px;
+	margin-left: -10px;
+	margin-bottom: 10px;
+	z-index: 2;
+	position: relative;
+}
+
+h4{ /*Main title*/
+	font-size: 114px;
+	font-family: Tw Cen MT, Arial black;
+	color: #c0dff3;
+    position: absolute;
+    left: 35px;
+    top: -140px;
+	z-index: 4;
+	
+	white-space: nowrap;
+}
+
+img.shade{ /*Left gradient*/
+	right: 0px;
+	position: absolute;
+	z-index: 3;
+	top: 0px;
+}
+
+img.icon{ /*Vinyl Scratch*/
+	right: 0px;
+	position: absolute;
+	z-index: 4;
+	top: 0px;
+}
+
+h1 { /*The sub-title text under the title*/
+	font-family:Tw Cen MT, Arial Black, sans-serif;
+	position: absolute;
+	left: 35px;
+	color: #91CCF2;
+	white-space: nowrap;
+	font-size: 22px;
+    top: 130px;
+}
+
+div.message {
+    margin-top: -20px;
+    margin-left: 25px;
+	margin-bottom: -10px;
+    height: 40px;
+    padding: 3px;
+}
+
+p.message { /*Message under main banner*/
+	font-size: 16px;
+	font-family: Tw Cen MT, Arial Black, sans-serif;
+    top:-10px;
+    position: relative;
+}
+
+div.break { /*Page break*/
+	height: 2px;
+	width: 120%;
+	background-color: #004069;
+	z-index: 0;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: -10px;
+}
+
+/*End Header*/
+
+.sidebutton {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 0px;
+    top: 215px;
+    background-color: #B3B3B3;
+    z-index: 100;
+    transition: right ease-in-out 500ms, opacity ease-in-out 500ms; /* css3 transition */
+    -o-transition: right ease-in-out 500ms, opacity ease-in-out 500ms;
+    -moz-transition: right ease-in-out 500ms, opacity ease-in-out 500ms;
+    -webkit-transition: right ease-in-out 500ms, opacity ease-in-out 500ms;
+    opacity: 0.7;
+}
+
+div.sidebutton.fixed {
+    
+}
+
+div.sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #C4C4C4;
+    z-index: 100;
+    transition: width ease-in-out 500ms; /* css3 transition */
+    -o-transition: width ease-in-out 500ms;
+    -moz-transition: width ease-in-out 500ms;
+    -webkit-transition: width ease-in-out 500ms;
+}
+
+div.sidebar.sidebarshow {
+    width:200px;
+    
+} 
+
+div.sidebutton.sidebarshow {
+    right: 200px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+span > div{ /*Content background*/
+	background-color: #DBDBDB;
+	padding: 5px;
+	border-radius: 0px;
+	padding-left: 25px;
+	margin-top: 10px;
+	width: 100%;
+	margin-right: 10px;
+	left: -10px;
+	z-index: 0;
+	margin-left: -10px;
+	position: static;
+	margin-bottom: 15px;
+}
+.title{ /*Class for items in song title banner*/
+	margin-left: 15px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+h2{ /*Title of Song*/
+	font-family: Arial Black, sans-serif;
+	z-index: 3;
+}
+
+#tagbox{
+    left: 5px;
+    top: 0px;
+    padding: 0;
+}
+
+.tags{
+    position: relative;
+    padding: 0;
+}
+
+.tags div{
+    background-color: red;
+    border-radius: 3px;
+    display:inline;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    font-family: Arial black, sans-serif;
+    margin-right: 10px;
+    margin-left: -5px;
+	left: 0px;
+}
+
+.tags .pony {
+    background-color: #FC53D5; /*pink*/
+}
+
+.tags .vocals {
+    background-color: #5454FF; /*Blue*/
+}
+
+.tags .electronic {
+    background-color: #0097C9; /*Dark blue*/
+}
+
+.tags .acoustic {
+    background-color: #11C900; /*Green - Note: currently this looks meh*/
+}
+
+.tags .twilight {
+    background-color: #B689C8; 
+}
+
+.tags .pinkie {
+    background-color: #F3B6CF; 
+}
+
+.tags .flutters {
+    background-color: #FDF6AF;
+}
+
+.tags .applejack {
+    background-color: #FFC261;
+}
+
+.tags .dash {
+    background-color: #9EDBF9;
+}
+
+.tags .rarity {
+    background-color: #EBEFF1;
+}
+
+.tags .other {
+    background-color: #BABABA;
+}
+
+div.titlebanner{ /*Song title banner*/
+	height:80px;
+	/*background-color:#5cd9f2;*/
+	background-image: url(Pictures/BannerEmpty.png);
+	padding-top: 5px;
+	border-radius: 0px;
+	margin: 0px;
+	z-index: 2;
+	position: relative;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+img.artwork {
+	position: relative;
+	width:300px;
+	height: 300px;
+	margin-left: -300px;
+	margin-right: 10px;
+	float: left;
+}
+
+.imgwrapper{
+    
+}
+
+.imgwrapper .slide{
+    overflow: hidden;
+    height: 0px;
+    width:300px;
+    background-color: #303030;
+    z-index: 4;
+    position:absolute;
+    left: 0px;
+    bottom: -300px;
+    transition: height ease-in-out 500ms; /* css3 transition */
+    -o-transition: height ease-in-out 500ms;
+    -moz-transition: height ease-in-out 500ms;
+    -webkit-transition: height ease-in-out 500ms;
+    opacity: .8;
+}
+
+.avatar{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    z-index: 7;
+    padding: 0px;
+    float: left;
+    margin: 5px;
+}
+
+.slideinfo{
+    position: relative;
+    top: 0px;
+    margin-top: 0;
+    float: left;
+    font-family: arial;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.imgwrapper:hover .slide{
+    height: 80px;
+}
+
+div.container {
+	padding-left: 300px;
+	padding-right: 0px;
+	margin-right: 25px;
+	position: relative;
+}
+
+div.content {
+	float: left;
+	width: 100%;
+	position: relative;
+	height: 0px;
+}
+
+div.buffer {
+	width: 0px;
+	float: left;
+	height: 0px;
+	margin-right: 0px;
+}
+
+iframe { /*Embedded Player*/
+	height: 190px;
+	width: 100%;
+	scrolling: no;
+	frameborder: no;
+	border: none;
+	z-index: 1;
+	position: relative;
+	top: -300px;
+	float: left;
+	margin-left: 10px;
+	min-width: 700px;
+}
+
+.flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+	/* flip the pane when hovered */
+.flip-container:hover .flipper {
+	-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	 -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    
+    position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 12;
+}
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    z-index: 11;
+}
+
+div.linkbuttons { /* Wrapper around all buttons*/
+	position: absolute;
+	top: -105px;
+	margin-top: 0px;
+	left: 0px;
+	margin-left: 10px;
+	width: 2000px;
+	overflow-x: hidden;
+    overflow-y: visible;
+    padding-top: 0px;
+}
+
+.front, .back{
+	height: 100px;
+	width: 135px;
+    padding-left: 15px;
+    
+    
+}
+
+.flip-container{
+	margin-right: 10px;
+	margin-bottom: 5px;
+    margin-top: 5px;
+    height: 100px;
+    width: 150px;
+    float: left;
+}
+
+.front img{
+	position: relative;
+	float: left;
+	top: 40px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+.front p, .back p {
+	position: relative;
+	top: 38px;
+	font-size: 20px;
+	font-family: Arial, sans-serif;
+	margin-top: 0px;
+	margin-left: 25px;
+}
+
+.back p {
+    color: white;
+    top: 17px;
+	left: 0px; 
+	font-family: Tw Cen MT, sans-serif;
+	font-size: 18px;
+	margin-left: 5px;  
+}
+
+div.YouTubebutton{
+	background-color: #ed2626;
+}
+
+div.YouTubebutton p {
+	color: white;
+}
+
+div.Soundcloudbutton{
+	background-color: #ff6600;
+}
+
+div.Soundcloudbutton p {
+	color: white;
+	top: 17px;
+	left: 0px; 
+	font-family: Tw Cen MT, sans-serif;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+div.Soundcloudbutton img {
+	width: 100px;
+	height: 43px;
+	top: 20px;
+	left: 10px;
+}
+
+div.Bandcampbutton{
+	background-color: #465053;
+}
+
+
+
+div.Bandcampbutton p {
+	color: white;
+	left: 0px;
+	top: 38px;
+}
+
+.Bandcampbutton.back p {
+    color: white;
+    top: 17px;
+	left: 0px; 
+	font-family: Tw Cen MT, sans-serif;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+div.Bandcampbutton img {
+	margin-right: -1px;
+	top: 42px;
+	width: 26px;
+	height: 16px;
+}
+
+div.Deviantartbutton{
+	background-color: #4b5d4f;
+}
+
+div.Deviantartbutton p {
+	color: #c0d731;
+	margin-left: 23px;
+	font-family: Exo black, Klavika bold, Arial;
+    top: 38px;
+}
+
+.Deviantartbutton.back p {
+    color: white;
+    top: 17px;
+    left: 0px; 
+	font-family: Tw Cen MT, sans-serif;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+div.Otherbutton{
+	background-color: #5293cb;
+}
+
+div.Otherbutton p {
+	color: #1b3e74;
+}
+
+.Otherbutton.back p {
+    color: white;
+    top: 17px;
+    left: 0px; 
+    font-family: Tw Cen MT, sans-serif;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+div.paragraph {
+	clear: both;
+}
+
+div.paragraph p { /*Additonal links & stuff*/
+	font-size: 17px;
+	font-family: Arial,sans-serif;
+	z-index: 1;
+	position: relative;
+	top: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
