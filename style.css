@@ -465,6 +465,27 @@ div.YouTubebutton p {
 	color: white;
 }
 
+div.Ponyfmbutton{
+	background-color: #84528a;
+}
+
+div.Ponyfmbutton img{
+	display: none;
+}
+
+.Ponyfmbutton.front p{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24pt;
+	margin: auto;
+	left: 8px;
+	top: 20px;
+}
+
+div.Ponyfmbutton p {
+	color: white;
+	margin: 0;
+}
+
 div.Soundcloudbutton{
 	background-color: #ff6600;
 }

@@ -21,4 +21,4 @@ front = DeviantART
 [ponyfm]
 class = Ponyfmbutton
 icon = PonyfmIcon.png
-front = Pony.fm
+front = pony.fm

@@ -3,7 +3,7 @@
 	<head>
 		<title>Music Spotlight Compilation</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="test" />
+<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		<link rel="shortcut icon" type="image/x-icon" href="test" />
         <script language="javascript" type="text/javascript" src="jquery-2.0.3.js"></script>
         <script type="text/javascript" src="script.js"></script>
 	</head>
