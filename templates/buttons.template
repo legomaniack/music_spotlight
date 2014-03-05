@@ -2,7 +2,7 @@
 	<div class="flip-container">
 		<div class="flipper">
 			<div class="{b_class} front">
-				<img src="pictures/{icon}"/>
+				<img src="/pictures/{icon}"/>
 				<p>{front}</p>
 			</div>
 			<div class="{b_class} back">

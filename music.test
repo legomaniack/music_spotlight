@@ -13,3 +13,18 @@ iframe =
 buttons = ponyfm
 links = www.example.com
 backs = Cake
+
+[Test Song2]
+tags = dash, Blah, dubstep
+artist = Lorem
+comment = Lorem Ipsum
+avatar = 
+artwork = 
+iframe = 
+
+buttons = 	ponyfm
+			youtube
+links = 	www.example.com
+			www.youtube.com
+backs = 	Cake
+			This is a button
