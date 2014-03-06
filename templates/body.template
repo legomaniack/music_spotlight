@@ -2,17 +2,17 @@
 <html>
 	<head>
 		<title>Music Spotlight Compilation</title>
-		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
 		<link rel="shortcut icon" type="image/x-icon" href="test" />
-        <script language="javascript" type="text/javascript" src="/jquery-2.0.3.js"></script>
-        <script type="text/javascript" src="/script.js"></script>
+        <script language="javascript" type="text/javascript" src="jquery-2.0.3.js"></script>
+        <script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 		<div class="header">
 			<em><h4>Music Spotlight</h4></em>
-			<img class="shade" src="/pictures/BannerGradient.png"/>
-			<img class="icon" src="/pictures/BannerIcon.png"/>
+			<img class="shade" src="pictures/BannerGradient.png"/>
+			<img class="icon" src="pictures/BannerIcon.png"/>
 		    <h1>{subtitle}</h1>
 		</div>
 		<br/>
@@ -21,7 +21,7 @@
 		<div class="break"></div>
 		
         <a><div class="sidebutton">
-			<img src="/pictures/menu.png"/>
+			<img src="pictures/menu.png"/>
 		</div></a>
         <div class="sidebar">
             <p>Some info here</p>
