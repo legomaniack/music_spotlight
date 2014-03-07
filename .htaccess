@@ -1,0 +1,4 @@
+Allow from all
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^ponymusicspotlight.com
+RewriteRule (.*) http://www.ponymusicspotlight.com/$1 [R=301,L]
