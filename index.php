@@ -25,26 +25,18 @@
 			<em><h4>Music Spotlight</h4></em>
 			<img class="shade" src="pictures/BannerGradient.png"/>
 			<img class="icon" src="pictures/BannerIcon.png"/>
-<<<<<<< HEAD
-		    <h1><?php echo $config['main']['subtitle'];?></h1>
-		</div>
-		<br/>
-		<div class="message"><p class="message"> <?php echo $config['main']['message'];?><</p></div>
-=======
-		    <h1><?php echo $config['main']['subtitle'];?> </h1>
+			<h1><?php echo $config['main']['subtitle'];?></h1>
 		</div>
 		<br/>
 		<div class="message"><p class="message"> <?php echo $config['main']['message'];?></p></div>
->>>>>>> ed6aceb722b75cee2f55217ac1eab5c3c60bb7fe
 		<br/>
 		<div class="break"></div>
-		
-        <a><div class="sidebutton">
+        	<a><div class="sidebutton">
 			<img src="pictures/menu.png"/>
 		</div></a>
-        <div class="sidebar">
-            <p>Some info here</p>
-        </div>
+        	<div class="sidebar">
+            		<p>Some info here</p>
+        	</div>
         
 		<?php
 		//LOTS OF CODE HERE
