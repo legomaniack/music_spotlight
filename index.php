@@ -14,7 +14,7 @@
 			$archive_names = array_map(function($e){
 				return pathinfo($e, PATHINFO_FILENAME);
 			}, $archive_list);
-			if (isset($_GET['id'] && in_array($_GET['id'], $archive_names)) {
+			if (isset($_GET['id']) and in_array($_GET['id'], $archive_names)) {
 				$music_file = "archive/".$_GET['id'].".music";
 			} else {
 				$music_file = "archive/".max($archive_names).".music";
@@ -25,10 +25,10 @@
 			<em><h4>Music Spotlight</h4></em>
 			<img class="shade" src="pictures/BannerGradient.png"/>
 			<img class="icon" src="pictures/BannerIcon.png"/>
-		    <h1><?php echo $config['main']['subtitle']?></h1>
+		    <h1><?php echo $config['main']['subtitle'];?> </h1>
 		</div>
 		<br/>
-		<div class="message"><p class="message"> <?php echo $config['main']['message']?><</p></div>
+		<div class="message"><p class="message"> <?php echo $config['main']['message'];?></p></div>
 		<br/>
 		<div class="break"></div>
 		
