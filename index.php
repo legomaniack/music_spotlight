@@ -25,10 +25,10 @@
 			<em><h4>Music Spotlight</h4></em>
 			<img class="shade" src="pictures/BannerGradient.png"/>
 			<img class="icon" src="pictures/BannerIcon.png"/>
-		    <h1><?php echo $config['main']['subtitle']?></h1>
+		    <h1><?php echo $config['main']['subtitle'];?></h1>
 		</div>
 		<br/>
-		<div class="message"><p class="message"> <?php echo $config['main']['message']?><</p></div>
+		<div class="message"><p class="message"> <?php echo $config['main']['message'];?><</p></div>
 		<br/>
 		<div class="break"></div>
 		
