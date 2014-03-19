@@ -457,6 +457,7 @@ div.linkbuttons { /* Wrapper around all buttons*/
 	font-family: Arial, sans-serif;
 	margin-top: 0px;
 	margin-left: 25px;
+	left:0px;
 }
 
 .back p {
@@ -502,13 +503,22 @@ div.Soundcloudbutton{
 	background-color: #ff6600;
 }
 
+@font-face {
+	font-family: Freeway Gothic;
+	src: url(./fonts/freewaygothic.ttf)
+}
+
 div.Soundcloudbutton p {
 	color: white;
 	top: 17px;
-	left: -9px; 
 	font-family: Tw Cen MT, sans-serif;
 	font-size: 18px;
-	margin-left: 5px;
+}
+div.Soundcloudbutton.front p {
+	margin-left: -2px;
+	font-family: Freeway Gothic, TwCen MT, sans-serif;
+	font-size: 16px;
+	top: 19px;
 }
 
 div.Soundcloudbutton img {
@@ -536,7 +546,6 @@ div.Bandcampbutton p {
 	left: 0px; 
 	font-family: Tw Cen MT, sans-serif;
 	font-size: 18px;
-	margin-left: 5px;
 }
 
 div.Bandcampbutton img {
