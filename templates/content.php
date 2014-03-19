@@ -20,9 +20,9 @@
 				<iframe src="{iframe}"></iframe>
 				<div class="linkbuttons">
 					<?php
-						$b_types = explode($data[], "/n");
-						$b_links = explode($data[], "/n");
-						$b_backs = explode($data[], "/n");
+						$b_types = explode($data['buttons'], "/n");
+						$b_links = explode($data['links'], "/n");
+						$b_backs = explode($data['backs'], "/n");
 						foreach ($b_types as $b_type) {
 							include "buttons.php";
 						}

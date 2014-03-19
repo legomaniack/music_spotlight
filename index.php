@@ -20,8 +20,8 @@
 				$music_file = "archive/".max($archive_names).".music";
 			}
 			$config = parse_ini_file($music_file, true);
-			$header_config = $config['main']
-			unset('main', $config)
+			$header_config = $config['main'];
+			unset($config['main']);
 		?>
 		<div class="header">
 			<em><h4>Music Spotlight</h4></em>
