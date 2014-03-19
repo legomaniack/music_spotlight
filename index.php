@@ -20,15 +20,17 @@
 				$music_file = "archive/".max($archive_names).".music";
 			}
 			$config = parse_ini_file($music_file, true);
+			$header_config = $config['main']
+			unset('main', $config)
 		?>
 		<div class="header">
 			<em><h4>Music Spotlight</h4></em>
 			<img class="shade" src="pictures/BannerGradient.png"/>
 			<img class="icon" src="pictures/BannerIcon.png"/>
-			<h1><?php echo $config['main']['subtitle'];?></h1>
+			<h1><?php echo $header_config['subtitle'];?></h1>
 		</div>
 		<br/>
-		<div class="message"><p class="message"> <?php echo $config['main']['message'];?></p></div>
+		<div class="message"><p class="message"> <?php echo $header_config['message'];?></p></div>
 		<br/>
 		<div class="break"></div>
         	<a><div class="sidebutton">
@@ -39,7 +41,9 @@
         	</div>
         
 		<?php
-		//LOTS OF CODE HERE
+		foreach ($config as $title => $data) {
+			include "templates/content.php";
+		}
 		?>
         
 	</body>
