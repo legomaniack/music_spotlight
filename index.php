@@ -42,7 +42,7 @@
         
 		<?php
 		foreach ($config as $title => $data) {
-			include "templates/content.php";
+			include "content.php";
 		}
 		?>
         
