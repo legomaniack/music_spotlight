@@ -12,4 +12,13 @@ $(document).ready(function(){
 			$('div.sidebutton').removeClass('fixed');
 		}
 	});
+	$('.sidebarpage').hide();
+	$("#navMenu a").click(function (e) {
+        e.preventDefault();
+        var item = this.href.split("#")[1];
+        $(".sidebarpage:visible").hide();
+        $("#" + item).show();
+    });
+	$('#tab1').show();
+
 });

@@ -125,24 +125,71 @@ div.sidebar {
     -webkit-transition: width ease-in-out 500ms;
 }
 
-.sidebar p {
+.sidebar div {
 	margin: 10px;
-	width: 180px;
+}
+
+#navMenu {
+	height: 30px;
+	width: 230px;
+	text-align:center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#navMenu  div{
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	width: 65px;
+	height: 25px;
+	text-align: center;
+	border-bottom: 2px solid black;
+	text-decoration: none;
+	color: black;
+	font-family: Tw Cen MT, Arial Black, sans-serif;
+	font-size: 13px;
+}
+
+#navMenu div::before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 7px;
+	width: 2px;
+	background-color: black;
+	bottom: 0px;
+	left: 0px;
+}
+
+#navMenu div::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 7px;
+	width: 2px;
+	background-color: black;
+	bottom: 0px;
+	right: 0px;
+}
+
+#navMenu a:nth-child(2) div {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.sidebarpage {
+	font-family: Futura, ‘Century Gothic’, AppleGothic, sans-serif;
 }
 
 div.sidebar.sidebarshow {
-    width:200px;
+    width:250px;
 } 
 
 div.sidebutton.sidebarshow {
-    right: 200px;
+    right: 250px;
     opacity: 1;
 }
-
-
-
-
-
 
 
 

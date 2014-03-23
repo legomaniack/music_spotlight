@@ -6,7 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
 		<link rel="shortcut icon" type="image/x-icon" href="test" />
         <script language="javascript" type="text/javascript" src="jquery-2.0.3.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 		<?php
@@ -33,12 +33,25 @@
 		<div class="message"><p class="message"> <?php echo $header_config['message'];?></p></div>
 		<br/>
 		<div class="break"></div>
-        	<a><div class="sidebutton">
+        <a><div class="sidebutton">
 			<img src="pictures/menu.png"/>
 		</div></a>
-        	<div class="sidebar">
-            		<p>Some info here</p>
-        	</div>
+		<div class="sidebar">
+			<div id="navMenu">
+				<a href="#tab1"><div>Settings</div></a>
+				<a href="#tab2"><div>About</div></a>
+				<a href="#tab3"><div>Archive</div></a>
+			</div>
+			<div id="tab1" class="sidebarpage">
+				TEST1
+			</div>
+			<div id="tab2" class="sidebarpage">
+				Blah
+			</div>
+			<div id="tab3" class="sidebarpage">
+				Cake
+			</div>
+		</div>
         
 		<?php
 		foreach ($config as $title => $data) {
