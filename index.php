@@ -42,21 +42,29 @@
 				<a href="#tab2"><div>About</div></a>
 				<a href="#tab3"><div>Archive</div></a>
 			</div>
-			<div id="tab1" class="sidebarpage">
+			<div id="tab1" class="sidebarpage"> <!--Settings-->
 				TEST1
 			</div>
-			<div id="tab2" class="sidebarpage">
+			<div id="tab2" class="sidebarpage"> <!--About-->
 				Blah
 			</div>
-			<div id="tab3" class="sidebarpage">
-				Cake
+			<div id="tab3" class="sidebarpage"> <!--Archive-->
+				<ul>
+				<?php
+					foreach ($archive_names as $name) {
+						echo "<li> <a href='www.ponymusicspotlight.com?id=".$name."'>Music Spotlight ".$name."</a></li>";
+					}
+				?>
+				</ul>
 			</div>
 		</div>
         
 		<?php
+		/*> PHP is not working! <!--  HTML will echo this if PHP is not loading*/
 		foreach ($config as $title => $data) {
 			include "content.php";
 		}
+		/*--><? */
 		?>
         
 	</body>
