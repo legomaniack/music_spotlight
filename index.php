@@ -4,6 +4,7 @@
 		<title>Music Spotlight Compilation</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/x-icon" href="test" />
         <script language="javascript" type="text/javascript" src="jquery-2.0.3.js"></script>
 		<script type="text/javascript" src="script.js"></script>
@@ -38,9 +39,9 @@
 		</div></a>
 		<div class="sidebar">
 			<div id="navMenu">
-				<a href="#tab1"><div>Settings</div></a>
-				<a href="#tab2"><div>About</div></a>
-				<a href="#tab3"><div>Archive</div></a>
+				<a href="#tab1"><div  class = 'activetab'><p>Settings</p></div></a>
+				<a href="#tab2"><div><p>About</p></div></a>
+				<a href="#tab3"><div><p>Archive</p></div></a>
 			</div>
 			<div id="tab1" class="sidebarpage"> <!--Settings-->
 				TEST1

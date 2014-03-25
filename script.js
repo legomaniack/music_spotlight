@@ -15,6 +15,8 @@ $(document).ready(function(){
 	$('.sidebarpage').hide();
 	$("#navMenu a").click(function (e) {
         e.preventDefault();
+		$('#navMenu a div').removeClass('activetab');
+		$('div', this).addClass('activetab');
         var item = this.href.split("#")[1];
         $(".sidebarpage:visible").hide();
         $("#" + item).show();

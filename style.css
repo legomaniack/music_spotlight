@@ -142,13 +142,19 @@ div.sidebar {
 	position: relative;
 	display: inline-block;
 	width: 65px;
-	height: 25px;
+	height: 30px;
 	text-align: center;
 	border-bottom: 2px solid black;
 	text-decoration: none;
 	color: black;
-	font-family: Tw Cen MT, Arial Black, sans-serif;
+	font-family: "Open Sans", Arial Black, sans-serif;
 	font-size: 13px;
+}
+
+#navMenu p {
+	position: relative;
+	margin: 0;
+	top: 7px;
 }
 
 #navMenu div::before {
@@ -173,13 +179,41 @@ div.sidebar {
 	right: 0px;
 }
 
+#navMenu div:hover {
+	background-color: #A6A6A6;
+}
+
+#navMenu div.activetab {
+	border-bottom-color: #1741BF;
+}
+
+#navMenu div.activetab::before{
+	background-color: #1741BF;
+}
+
+#navMenu div.activetab::after{
+	background-color: #1741BF;
+}
+
 #navMenu a:nth-child(2) div {
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
 .sidebarpage {
-	font-family: Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+	font-family: "Open Sans", sans-serif;
+}
+
+.sidebarpage ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.sidebar a{
+	text-decoration:none;
+	color: inherit;
 }
 
 div.sidebar.sidebarshow {
