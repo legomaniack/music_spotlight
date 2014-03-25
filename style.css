@@ -679,11 +679,11 @@ div.paragraph {
 
 div.paragraph p { /*Additonal links & stuff*/
 	font-size: 17px;
-	font-family: Arial,sans-serif;
+	font-family: "Open Sans",Arial black,sans-serif;
 	z-index: 1;
 	position: relative;
 	top: 5px;
-	margin-left: 5px;
+	margin-left: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }

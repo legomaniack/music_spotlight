@@ -53,7 +53,7 @@
 				<ul>
 				<?php
 					foreach ($archive_names as $name) {
-						echo "<li> <a href='www.ponymusicspotlight.com?id=".$name."'>Music Spotlight ".$name."</a></li>";
+						echo "<li> <a href='/?id=".$name."'>Music Spotlight ".$name."</a></li>";
 					}
 				?>
 				</ul>
