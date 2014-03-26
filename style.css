@@ -209,6 +209,11 @@ div.sidebar {
 	height: 80px;
 }
 
+#about_bottom {
+	position: absolute;
+	bottom: 0px;
+}
+
 .sidebarpage ul {
 	list-style-type:none;
 	margin: 0;

@@ -49,12 +49,17 @@
 			<div id="tab2" class="sidebarpage"> <!--About-->
 				<img id="author_avatar" align="right" src="pictures/legomaniack_avatar.png"/>
 				<p>
-				Hey, you found my about page! 
+				Hey, you found my about page!
 				This site is coded, run, and maintained by Legomaniack.
-				Originally just a random e-mail to my friends contaning cool music, 
+				Originally just a random e-mail to my friends contaning cool music,
 				it quickly became more elaborate until becoming the site you see before you.
 				My goal is to simply highlight the music I have personally found and feels needs to be shared.
 				Think of it as a different version of those 'Top 10' videos that go around.
+				</p>
+				<p id="about_bottom">
+				<a target='_blank' href="https://github.com/legomaniack/music_spotlight">Source</a>
+				 | 
+				<a></a>
 				</p>
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
