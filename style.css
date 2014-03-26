@@ -211,6 +211,7 @@ div.sidebar {
 }
 
 #about_bottom {
+	width: inherit;
 	position: absolute;
 	bottom: 0px;
 }
