@@ -204,6 +204,11 @@ div.sidebar {
 	font-family: "Open Sans", sans-serif;
 }
 
+.sidebarpage #author_avatar {
+	width: 80px;
+	height: 80px;
+}
+
 .sidebarpage ul {
 	list-style-type:none;
 	margin: 0;
