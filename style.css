@@ -204,7 +204,7 @@ div.sidebar {
 	font-family: "Open Sans", sans-serif;
 }
 
-.sidebarpage #author_avatar {
+#author_avatar {
 	width: 80px;
 	height: 80px;
 }
