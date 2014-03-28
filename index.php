@@ -39,12 +39,12 @@
 		</div></a>
 		<div class="sidebar">
 			<div id="navMenu">
-				<a href="#tab1"><div  class = 'activetab'><p>Settings</p></div></a>
-				<a href="#tab2"><div><p>About</p></div></a>
+				<a href="#tab1"><div><p>Settings</p></div></a>
+				<a href="#tab2"><div class = 'activetab'><p>About</p></div></a>
 				<a href="#tab3"><div><p>Archive</p></div></a>
 			</div>
 			<div id="tab1" class="sidebarpage"> <!--Settings-->
-				TEST1
+				HELP I DON'T KNOW WHAT TO PUT HERE.
 			</div>
 			<div id="tab2" class="sidebarpage"> <!--About-->
 				<img id="author_avatar" align="right" src="pictures/legomaniack_avatar.png"/>
@@ -56,17 +56,20 @@
 				My goal is to simply highlight the music I have personally found and feels needs to be shared.
 				Think of it as a different version of those 'Top 10' videos that go around.
 				</p>
+				<p>
+				
+				</p>
 				<p id="about_bottom">
 				<a class="underline" target='_blank' href="https://github.com/legomaniack/music_spotlight">Source</a>
 				 | 
-				<a></a>
+				<a class="underline" target='_blank' href="mailto:ng31415@gmail.com?subject=Music Spotlight">Contact</a>
 				</p>
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
 				<ul>
 				<?php
 					foreach ($archive_names as $name) {
-						echo "<li> <a href='/?id=".$name."'>Music Spotlight #".$name."</a></li>";
+						echo "<li> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></li>";
 					}
 				?>
 				</ul>

@@ -21,6 +21,6 @@ $(document).ready(function(){
         $(".sidebarpage:visible").hide();
         $("#" + item).show();
     });
-	$('#tab1').show();
+	$('#tab2').show();
 
 });
