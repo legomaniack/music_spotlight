@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
-		<?php
+		<?php //><!--
 			$archive_list = array_diff(scandir("archive"), array('.','..'));
 			$archive_names = array_map(function($e){
 				return pathinfo($e, PATHINFO_FILENAME);
@@ -33,6 +33,7 @@
 			}
 			$header_config = $config['main'];
 			unset($config['main']);
+			// --><?
 		?>
 		<div class="header">
 			<em><h4>Music Spotlight</h4></em>
@@ -77,21 +78,22 @@
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
 				<p><a href='/?id=all' class="underline">All</a></p>
-				<?php
+				<?php //>PHP is not working!<!--
 				
 					foreach ($archive_names as $name) {
 						echo "<p> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></p>";
 					}
-				?>
+					//--><?
+				?> 
 			</div>
 		</div>
         
 		<?php
-		/*> PHP is not working! <!--  HTML will echo this if PHP is not loading*/
+		//> PHP is not working! <!--  HTML will echo this if PHP is not loading
 		foreach ($config as $title => $data) {
 			include "content.php";
 		}
-		/*--><? */
+		// --><? 
 		?>
         
 	</body>
