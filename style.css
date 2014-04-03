@@ -115,7 +115,8 @@ div.break { /*Page break*/
 	margin-left: -10px;
 }
 
-/*End Header*/
+/*BEGIN SIDEBAR*/
+
 
 .sidebutton {
     position: absolute;
@@ -249,13 +250,6 @@ div.sidebar {
 	bottom: 0px;
 }
 
-.sidebarpage ul {
-	list-style-type:none;
-	margin: 0;
-	padding: 0;
-	
-}
-
 .sidebar a{
 	text-decoration:none;
 	color: inherit;
@@ -270,7 +264,7 @@ div.sidebutton.sidebarshow {
     opacity: 1;
 }
 
-
+/* BEGINNING OF MUSIC CONTENT*/
 
 
 span > div{ /*Content background*/

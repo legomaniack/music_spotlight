@@ -16,11 +16,21 @@
 				return pathinfo($e, PATHINFO_FILENAME);
 			}, $archive_list);
 			if (isset($_GET['id']) and in_array($_GET['id'], $archive_names)) {
-				$music_file = "archive/".$_GET['id'].".music";
+				if ($_GET['id'] == "all") {
+					$config = array('main' => array('subtitle'=>'All at once!', 'message'=>'Every archived music spotlight combined.'));
+					foreach ($archive_list as $file) {
+						$music_config = parse_ini_file("archive/".$file, true);
+						unset($music_config['main'])
+						$config = array_merge($config, $music_config)
+					}
+				} else {
+					$music_file = "archive/".$_GET['id'].".music";
+					$config = parse_ini_file($music_file, true);
+				}
 			} else {
 				$music_file = "archive/".max($archive_names).".music";
+				$config = parse_ini_file($music_file, true);
 			}
-			$config = parse_ini_file($music_file, true);
 			$header_config = $config['main'];
 			unset($config['main']);
 		?>
@@ -66,13 +76,13 @@
 				</p>
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
-				<ul>
+				<p><a href='/?id=all' class="underline">All</a></p>
 				<?php
+				
 					foreach ($archive_names as $name) {
-						echo "<li> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></li>";
+						echo "<p> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></p>";
 					}
 				?>
-				</ul>
 			</div>
 		</div>
         
