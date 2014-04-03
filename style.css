@@ -115,7 +115,7 @@ div.break { /*Page break*/
 	margin-left: -10px;
 }
 
-/*BEGIN SIDEBAR*/
+/*BEGIN SIDEBAR ///////////////////////////////////*/
 
 
 .sidebutton {
@@ -250,6 +250,16 @@ div.sidebar {
 	bottom: 0px;
 }
 
+#archive_title {
+	margin-bottom: 5px;
+}
+
+p.archive{
+	margin-top: 0;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
 .sidebar a{
 	text-decoration:none;
 	color: inherit;
@@ -264,7 +274,7 @@ div.sidebutton.sidebarshow {
     opacity: 1;
 }
 
-/* BEGINNING OF MUSIC CONTENT*/
+/* BEGINNING OF MUSIC CONTENT /////////////////////*/
 
 
 span > div{ /*Content background*/

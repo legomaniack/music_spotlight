@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Music Spotlight Compilation</title>
+		<title>Pony Music Spotlight</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -77,11 +77,12 @@
 				</p>
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
-				<p><a href='/?id=all' class="underline">All</a></p>
+				<p id="archive_title">Music Spotlight Archive:</p>
+				<p class="archive"><a href='/?id=all' class="underline">All</a></p>
 				<?php //>PHP is not working!<!--
 				
 					foreach ($archive_names as $name) {
-						echo "<p> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></p>";
+						echo "<p class='archive'> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></p>";
 					}
 					//--><?
 				?> 
