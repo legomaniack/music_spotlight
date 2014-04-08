@@ -15,13 +15,13 @@
 			$archive_names = array_map(function($e){
 				return pathinfo($e, PATHINFO_FILENAME);
 			}, $archive_list);
-			if (isset($_GET['id']) and in_array($_GET['id'], $archive_names)) {
+			if (isset($_GET['id']) AND (in_array($_GET['id'], $archive_names) OR $_GET['id'] == "all")) {
 				if ($_GET['id'] == "all") {
 					$config = array('main' => array('subtitle'=>'All at once!', 'message'=>'Every archived music spotlight combined.'));
 					foreach ($archive_list as $file) {
 						$music_config = parse_ini_file("archive/".$file, true);
-						unset($music_config['main'])
-						$config = array_merge($config, $music_config)
+						unset($music_config['main']);
+						$config = array_merge($config, $music_config);
 					}
 				} else {
 					$music_file = "archive/".$_GET['id'].".music";
@@ -78,11 +78,11 @@
 			</div>
 			<div id="tab3" class="sidebarpage"> <!--Archive-->
 				<p id="archive_title">Music Spotlight Archive:</p>
-				<p class="archive"><a href='/?id=all' class="underline">All</a></p>
+				<p class="archive"><a href='./?id=all' class="underline">All</a></p>
 				<?php //>PHP is not working!<!--
 				
 					foreach ($archive_names as $name) {
-						echo "<p class='archive'> <a class='underline' href='/?id=".$name."'>Music Spotlight #".$name."</a></p>";
+						echo "<p class='archive'> <a class='underline' href='./?id=".$name."'>Music Spotlight #".$name."</a></p>";
 					}
 					//--><?
 				?> 
