@@ -32,7 +32,7 @@
 						echo "<p class=\"slideinfo\">".trim($info[0])."</p>";
 						unset($info[0]);
 						foreach ($info as $par) {
-							echo "<br/><p class=\"slideinfo secondary\">".trim($par)."</p>";
+							echo "<p class=\"slideinfo secondary\">".trim($par)."</p>";
 						}
 					?>
 				</div>
