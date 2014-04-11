@@ -65,7 +65,7 @@ h4{ /*Main title*/
 	font-family: Tw Cen MT, Arial black;
 	color: #c0dff3;
     position: absolute;
-    left: 35px;
+    left: 30px;
     top: -140px;
 	z-index: 4;
 	
@@ -285,7 +285,7 @@ div.sidebutton.sidebarshow {
 
 span > div{ /*Content background*/
 	background-color: #DBDBDB;
-	background-image: linear-gradient(#8DAAAF 93px, #DBDBDB 93px);
+	background-image: linear-gradient(#8DAAAF 82px, #DBDBDB 82px);
 	padding: 5px;
 	border-radius: 0px;
 	padding-left: 25px;
@@ -389,6 +389,7 @@ div.titlebanner{ /*Song title banner*/
 	position: relative;
 	background-repeat: no-repeat;
 	margin-bottom: 10px;
+	margin-top: -10px;
 }
 
 
