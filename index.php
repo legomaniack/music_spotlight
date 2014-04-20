@@ -88,7 +88,7 @@
 				?> 
 			</div>
 		</div>
-        
+        <div id=music_container>
 		<?php
 		//> PHP is not working! <!--  HTML will echo this if PHP is not loading
 		foreach ($config as $title => $data) {
@@ -96,6 +96,7 @@
 		}
 		// --><? 
 		?>
+		</div>
         
 	</body>
 </html>

@@ -1,5 +1,5 @@
 <span>
-	<div>
+	<div id="main">
 		<div class="titlebanner">
 			<h2 class="title"><?php echo $title; ?></h2>
 			<div id="tagbox" class="tags title">
@@ -8,7 +8,9 @@
 					$tag_list = explode(', ',$data['tags']);
 					foreach ($tag_list as $tag){
 						if (array_key_exists(strtolower($tag), $tags)){
+							echo "<a href='#".$tag."'>";
 							echo $tags[$tag];
+							echo "</a>";
 						} else {
 							$tag_split = explode(" ", strtolower($tag));
 							if (in_array('acoustic', $tag_split) or in_array('electronic', $tag_split)) {
@@ -16,7 +18,10 @@
 							} else {
 								$tag_name = $tag;
 							}
+							$tag_name = str_replace("_", " ", $tag_name);
+							echo "<a href='#".strtolower($tag_name)."'>";
 							echo "<div class='".strtolower($tag)."'>".$tag_name."</div>";
+							echo "</a>";
 						}
 					}
 				?>

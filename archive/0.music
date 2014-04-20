@@ -1,14 +1,14 @@
 [main]
 subtitle = "Still under construction!"
-message = "This is kinda a test file."
+message = "This is kinda a test file. Don't take anything here seriously."
 
 [Test copy of Strings Unbound]
-tags = "pony, orchestral epic"
+tags = "orchestral_epic, electronic blah"
 artist = "Carbon Maestro
 		feat. NO ONE
 		HELP
 		TEST"
-comment = "When Carbon makes a song about Octavia, it has to be Octavia surrounded by fire looking epic."
+comment = "When Carbon makes a song about Octavia, it has to be Octavia surrounded by fire, looking epic."
 avatar = "https://i3.sndcdn.com/avatars-000042722420-np7ifq-t200x200.jpg?435a760"
 artwork = "https://i1.sndcdn.com/artworks-000068382861-09q7ax-t500x500.jpg?435a760"
 iframe = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129939861&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"
