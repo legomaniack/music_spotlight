@@ -3,6 +3,7 @@
 	<head>
 		<title>Pony Music Spotlight</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" type="image/x-icon" href="test" />
@@ -45,7 +46,7 @@
 		<div class="message"><p class="message"> <?php echo $header_config['message'];?></p></div>
 		<br/>
 		<div class="break"></div>
-        <a><div class="sidebutton">
+        <a href=#sidebar><div class="sidebutton">
 			<img src="pictures/menu.png"/>
 		</div></a>
 		<div class="sidebar">

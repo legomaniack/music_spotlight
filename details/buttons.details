@@ -16,7 +16,7 @@ front = "SOUNDCLOUD"
 [deviantart]
 class = "Deviantartbutton"
 icon = "DeviantartIcon.png"
-front = "DeviantART"
+front = "deviant<strong><span>ART</span></strong>"
 
 [ponyfm]
 class = "Ponyfmbutton"

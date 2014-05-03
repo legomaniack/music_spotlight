@@ -2,7 +2,8 @@ $(document).ready(function(){
 	
 	var filtered_tags = new Array();
 	
-    $('.sidebutton').click(function(){
+    $('.sidebutton').click(function(e){
+		e.preventDefault();
         $('div.sidebutton').toggleClass('sidebarshow');
         $('div.sidebar').toggleClass('sidebarshow');
     });
@@ -67,4 +68,8 @@ $(document).ready(function(){
 		tag_hide();
 		
     });
+	
+	$(".expand_link").click(function(e) {
+		e.preventDefault();
+	});
 });

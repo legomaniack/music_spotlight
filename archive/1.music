@@ -11,13 +11,16 @@ artwork = "https://i1.sndcdn.com/artworks-000068382861-09q7ax-t500x500.jpg?435a7
 iframe = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129939861&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"
 buttons = 	"Youtube
 		Soundcloud
+		deviantart
 		bandcamp
 		ponyfm"
 links = 	"http://youtu.be/hXp9igQaBMY
 		https://soundcloud.com/the-carbon-maestro/strings-unbound
+		http://foxinshadow.deviantart.com/art/Strings-Unbound-427476219
 		http://thecarbonmaestro.bandcamp.com/track/strings-unbound
 		https://pony.fm/tracks/1860-strings-unbound"
 backs = 	"Listen on YouTube
 		Listen on Soundcloud
+		View art on deviantART
 		Buy on Bandcamp
 		Download on pony.fm"

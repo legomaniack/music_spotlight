@@ -312,10 +312,10 @@ div.sidebutton.sidebarshow {
 	margin-bottom: 15px;
 	overflow: hidden;
 	height: 425px;
-	transition: height ease-in-out 500ms; /* css3 transition */
-    -o-transition: height ease-in-out 500ms;
-    -moz-transition: height ease-in-out 500ms;
-    -webkit-transition: height ease-in-out 500ms;
+	transition: all ease-in-out 500ms; /* css3 transition */
+    -o-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
 }
 .title{ /*Class for items in song title banner*/
 	margin-left: 10px;
@@ -421,15 +421,50 @@ div.titlebanner{ /*Song title banner*/
 	margin-top: -5px;
 }
 
-
+.imgwrapper {
+	position: relative;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+}
 
 img.artwork {
 	position: relative;
+	left: 0;
 	width:300px;
 	height: 300px;
-	margin-left: -300px;
+	margin-left: 0px;
 	margin-right: 10px;
 	float: left;
+}
+
+div.expand_box {
+	z-index: 5;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #303030;
+	
+	overflow: hidden;
+	transition: opacity ease-in-out 500ms; /* css3 transition */
+    -o-transition: opacity ease-in-out 500ms;
+    -moz-transition: opacity ease-in-out 500ms;
+    -webkit-transition: opacity ease-in-out 500ms;
+	opacity: 0;
+}
+
+.imgwrapper:hover .expand_box{
+    opacity : .6;
+}
+
+.expand_box img {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 24px;
+	height: 24px;
 }
 
 .imgwrapper .slide{
@@ -440,7 +475,7 @@ img.artwork {
     z-index: 4;
     position:absolute;
     left: 0px;
-    bottom: -300px;
+    bottom: 0px;
     transition: height ease-in-out 500ms; /* css3 transition */
     -o-transition: height ease-in-out 500ms;
     -moz-transition: height ease-in-out 500ms;
@@ -479,17 +514,17 @@ img.artwork {
 }
 
 div.container {
-	padding-left: 300px;
+	padding-left: 0px;
 	padding-right: 0px;
 	margin-right: 25px;
 	position: relative;
 }
 
 div.content {
-	float: left;
-	width: 100%;
+	left: 300px;
+	padding-right: 20px;
+	width: calc(100% - 300px);
 	position: relative;
-	height: 0px;
 }
 
 div.buffer {
@@ -703,15 +738,9 @@ div.Bandcampbutton{
 div.Bandcampbutton p {
 	color: white;
 	left: 0px;
-	top: 38px;
 }
 
-.Bandcampbutton.back p {
-    color: white;
-    top: 17px;
-	left: 0px; 
-	font-size: 18px;
-}
+
 
 div.Bandcampbutton img {
 	margin-right: -1px;
@@ -727,17 +756,12 @@ div.Deviantartbutton{
 div.Deviantartbutton.front p {
 	color: #c0d731;
 	margin-left: 23px;
-	font-family: Exo black, Klavika bold, Arial;
+	font-family: 'Exo', Klavika bold, Arial, sans-serif;
     top: 38px;
 }
 
-.Deviantartbutton.back p {
-    color: white;
-    top: 17px;
-    left: 0px; 
-	font-family: Tw Cen MT, sans-serif;
-	font-size: 18px;
-	margin-left: 5px;
+div.Deviantartbutton.front p span{
+	font-size: 15px;
 }
 
 div.Otherbutton{
@@ -748,24 +772,11 @@ div.Otherbutton p {
 	color: #1b3e74;
 }
 
-.Otherbutton.back p {
-    color: white;
-    top: 17px;
-    left: 0px;
-	font-size: 18px;
-	margin-left: 5px;
-}
-
-div.paragraph {
-	clear: both;
-}
-
 div.paragraph p { /*Additional links & stuff*/
 	font-size: 17px;
 	font-family: "Open Sans",Arial black,sans-serif;
 	z-index: 1;
-	position: relative;
-	top: 5px;
+	position: absolute;
 	margin-left: 0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
