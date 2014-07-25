@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="imgwrapper">
 				<img class="artwork" src="<?php echo $data['artwork'];?>">
-				<?php
+				<?php/*
 					if (in_array('deviantart', $b_types)) {
 						echo "<a title='expand artwork' href='#expand' class='expand_link'><div class='expand_box'><img src='pictures/expand.png'/></div></a>";
 						$button_key = array_search("deviantart", $b_types);
@@ -47,8 +47,8 @@
 						$dev_json = curl_exec($ch);
 						curl_close($ch);
 						echo $dev_json;
-					}
-				?>				
+					}*/
+				?>		
 				<div class="slide">
 					<img class="avatar" src="<?php echo $data['avatar']; ?>"></img>
 					<?php
