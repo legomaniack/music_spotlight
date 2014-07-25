@@ -34,20 +34,10 @@
 		<div class="container">
 			<div class="imgwrapper">
 				<img class="artwork" src="<?php echo $data['artwork'];?>">
-				<?php/*
+				<?php
 					if (in_array('deviantart', $b_types)) {
 						echo "<a title='expand artwork' href='#expand' class='expand_link'><div class='expand_box'><img src='pictures/expand.png'/></div></a>";
-						$button_key = array_search("deviantart", $b_types);
-						$dev_url = trim($b_links[$button_key]);
-						$api_base = "http://backend.deviantart.com/oembed?url=";
-						$dev_full = $api_base.urlencode($dev_url);
-						$ch = curl_init();
-						curl_setopt($ch, CURLOPT_URL, $dev_full);
-						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-						$dev_json = curl_exec($ch);
-						curl_close($ch);
-						echo $dev_json;
-					}*/
+					}
 				?>		
 				<div class="slide">
 					<img class="avatar" src="<?php echo $data['avatar']; ?>"></img>
