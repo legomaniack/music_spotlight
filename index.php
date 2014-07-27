@@ -36,6 +36,24 @@
 			unset($config['main']);
 			// --><?
 		?>
+		
+		<?php 
+			try {
+			$token_url = "https://www.deviantart.com/oauth2/token";
+			$params = array(
+				"grant_type" => "client_credentials",
+				"client_id" => "1250",
+				"client_secret" => "319c53da42aa9a81ff99d37c7429162d"
+			);
+			$request = new HttpRequest($token_url, HttpRequest::METH_POST);
+			$request->setPostFields($params);
+			$request->send();
+			$responseObj = json_decode($request->getResponseBody());
+			$token = $responseObj->access_token;
+			echo $token;
+			}
+		?>
+		
 		<div class="header">
 			<em><h4>Music Spotlight</h4></em>
 			<img class="shade" src="pictures/BannerGradient.png"/>
