@@ -37,21 +37,26 @@
 			// --><?
 		?>
 		
-		<?php 
-			if (class_exists('HttpRequest')) {
-			$token_url = "https://www.deviantart.com/oauth2/token";
+		<?php /*
+			$ch = curl_init("https://www.deviantart.com/oauth2/token");
 			$params = array(
 				"grant_type" => "client_credentials",
-				"client_id" => "1250",
-				"client_secret" => "319c53da42aa9a81ff99d37c7429162d"
+				"client_id" => 1250,
+				"client_secret" => "319c53da42aa9a81ff99d37c7429162d",
+				"redirect_uri" => "http://www.ponymusicspotlight.com"
 			);
-			$request = new HttpRequest($token_url, HttpRequest::METH_POST);
-			$request->setPostFields($params);
-			$request->send();
-			$responseObj = json_decode($request->getResponseBody());
-			$token = $responseObj->access_token;
-			echo $token;
-			}
+			
+			curl_setopt( $ch, CURLOPT_POST, 1);
+			curl_setopt( $ch, CURLOPT_POSTFIELDS, $params);
+			curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt( $ch, CURLOPT_HEADER, 0);
+			curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, 0);
+			curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+
+			$response = curl_exec($ch);
+			$info = curl_getinfo($ch);
+			$error = curl_error($ch);
+			*/
 		?>
 		
 		<div class="header">
