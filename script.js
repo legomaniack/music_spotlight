@@ -71,5 +71,13 @@ $(document).ready(function(){
 	
 	$(".expand_link").click(function(e) {
 		e.preventDefault();
+		$('.fullart').removeClass('show');
+		console.log($(this).parents().find('.fullart'));
+		$(this).parents().find('.fullart').addClass('show');
+	});
+	
+	$(".close_link").click(function(e) {
+		e.preventDefault();
+		$('.fullart').removeClass('show');
 	});
 });

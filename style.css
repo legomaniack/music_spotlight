@@ -438,6 +438,32 @@ img.artwork {
 	float: left;
 }
 
+img.fullart {
+	position: fixed;
+	display: block;
+	height: auto;
+	width: auto;
+	max-height: 90%;
+	max-width: 90%;
+	top: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	border: 10px solid #5C6F73;
+	display: none;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	z-index: 900;
+}
+
+img.fullart.show {
+	display: inline;
+}
+
 div.expand_box {
 	z-index: 5;
 	height: 30px;

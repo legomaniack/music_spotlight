@@ -35,8 +35,10 @@
 			<div class="imgwrapper">
 				<img class="artwork" src="<?php echo $data['artwork'];?>">
 				<?php
-					if (in_array('deviantart', $b_types)) {
-						echo "<a title='expand artwork' href='#expand' class='expand_link'><div class='expand_box'><img src='pictures/expand.png'/></div></a>";
+					
+					if (isset($data['artwork_full'])) {
+						echo "<a title='Expand artwork' href='#expand' class='expand_link'><div class='expand_box'><img src='pictures/expand.png'/></div></a>";
+						echo "<a class='close_link' href='#close' title='Click to close'><img class='fullart' src='".$data['artwork_full']."'/></a>";
 					}
 				?>		
 				<div class="slide">
