@@ -38,7 +38,7 @@
 		?>
 		
 		<?php 
-			try {
+			if (class_exists('HttpRequest')) {
 			$token_url = "https://www.deviantart.com/oauth2/token";
 			$params = array(
 				"grant_type" => "client_credentials",
@@ -51,7 +51,7 @@
 			$responseObj = json_decode($request->getResponseBody());
 			$token = $responseObj->access_token;
 			echo $token;
-			} catch {}
+			}
 		?>
 		
 		<div class="header">
