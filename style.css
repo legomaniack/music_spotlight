@@ -452,16 +452,25 @@ img.fullart {
 	right: 0;
 	transform: translateY(-50%);
 	border: 10px solid #5C6F73;
-	display: none;
-	-webkit-transition: opacity 0.5s;
-	-moz-transition: opacity 0.5s;
-	-o-transition: opacity 0.5s;
-	transition: opacity 0.5s;
+	border: none;
+	max-height: 0;
+	opacity: 0;
+	-webkit-transition: max-height 0s 200ms, opacity 200ms ease-in-out;
+	-moz-transition: max-height 0s 200ms, opacity 200ms ease-in-out;
+	-o-transition: max-height 0s 200ms, opacity 200ms ease-in-out;
+	transition: max-height 0s 200ms, opacity 200ms ease-in-out;
 	z-index: 900;
+	overflow: hidden;
 }
 
 img.fullart.show {
-	display: inline;
+	max-height: 90%;
+	border: 10px solid #5C6F73;
+	opacity: 1;
+	-webkit-transition: max-height 0s, opacity 200ms ease-in-out;
+	-moz-transition: max-height 0s, opacity 200ms ease-in-out;
+	-o-transition: max-height 0s, opacity 200ms ease-in-out;
+	transition: max-height 0s, opacity 200ms ease-in-out;
 }
 
 div.expand_box {
