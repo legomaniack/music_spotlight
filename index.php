@@ -51,7 +51,7 @@
 			$responseObj = json_decode($request->getResponseBody());
 			$token = $responseObj->access_token;
 			echo $token;
-			}
+			} catch {}
 		?>
 		
 		<div class="header">
