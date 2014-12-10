@@ -75,8 +75,8 @@
 		<div class="sidebar">
 			<div id="navMenu">
 				<a href="#tab1"><div><p>Settings</p></div></a>
-				<a href="#tab2"><div class = 'activetab'><p>About</p></div></a>
-				<a href="#tab3"><div><p>Archive</p></div></a>
+				<a href="#tab2"><div><p>About</p></div></a>
+				<a href="#tab3"><div class = 'activetab'><p>Archive</p></div></a>
 			</div>
 			<div id="tab1" class="sidebarpage"> <!--Settings-->
 				HELP I DON'T KNOW WHAT TO PUT HERE.

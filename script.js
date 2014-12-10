@@ -25,7 +25,7 @@ $(document).ready(function(){
         $(".sidebarpage:visible").hide();
         $("#" + item).show();
     });
-	$('#tab2').show();
+	$('#tab3').show(); // Default to this tab
 	
 	function compare (a, b) {
 		for(i in a) {
